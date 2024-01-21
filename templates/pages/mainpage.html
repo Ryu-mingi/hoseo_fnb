@@ -1,11 +1,16 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>호서 F&B</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'stylemain.css' %}">
+
 </head>
+
 <body>
+
+{% block content %}
     <header>
         헤더 내용
     </header>
@@ -15,5 +20,6 @@
     </article>
 
     <script src="scripts.js"></script>
+{% endblock %}
 </body>
 </html>
